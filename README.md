@@ -13,6 +13,9 @@ In prediction step, we will predict behaviours of cars around the ego car. If we
 - predict where this car will be in the future using process model. 
 - if the future position of this car is within SAFE DISTANCE, we need to make action in trajectory planning step. 
 
+**Why SAFE DISTANCE = 30m**:
+car_s moves at the speed of 50mph at most, which is 22 m/s. In every 0.02s car moves to next waypoint in the trajectory. In 0.02s, the car moves 22x0.02 = 0.44 m. We took 50 waypoints in our trajectory generation. So our car will move 0.44x50 = 22 m in general. We add another 8 m as a secure distance between two car, come up with 30m. 
+
 #### Step 2 - Behaviour Planning
 Based on the prediction results, we will do behaviour planning in this step.
 ```
