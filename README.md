@@ -14,6 +14,7 @@ In prediction step, we will predict behaviours of cars around the ego car. If we
 - if the future position of this car is within SAFE DISTANCE, we need to make action in trajectory planning step. 
 
 #### Step 2 - Behaviour Planning
+Based on the prediction results, we will do behaviour planning in this step.
 ```
 IF (the ego car is too close from the car in front):
 	IF (it is safe to change lane LEFT):
@@ -28,6 +29,10 @@ ELSE  (the ego car has no car in in front):
 	IF (the ego car goes faster than  MAX SPEED): 
 		Stay with  MAX SPEED. 
 ```
+Notes:
+- To avoid jerk, max acceleration speed is defined as 0.224.
+- Max Speed: 49.5 mph.
+
 #### Step 3 - Trajectory Generation
 
 
