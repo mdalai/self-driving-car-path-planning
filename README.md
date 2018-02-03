@@ -14,6 +14,20 @@ In prediction step, we will predict behaviours of cars around the ego car. If we
 - if the future position of this car is within SAFE DISTANCE, we need to make action in trajectory planning step. 
 
 #### Step 2 - Behaviour Planning
+```
+IF (the ego car is too close from the car in front):
+	IF (it is safe to change lane LEFT):
+		Change Lane Left.
+	IF (it is safe to change lane RIGHT):
+		Change Lane Right.
+	IF (it is NOT safe to change lane):  STAY in the lane, GO slower.
+
+ELSE  (the ego car has no car in in front):
+	IF (the ego car goes slower than MAX SPEED): 
+		Accelerate. 
+	IF (the ego car goes faster than  MAX SPEED): 
+		Stay with  MAX SPEED. 
+```
 #### Step 3 - Trajectory Generation
 
 
