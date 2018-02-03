@@ -37,6 +37,27 @@ Notes:
 - Max Speed: 49.5 mph.
 
 #### Step 3 - Trajectory Generation
+In this step, we will generate trajectory based on the behaviour planning result. There are 4 different types of Motion Planning Algorithms in general. They are 
+- Combinatorial Methods
+- Potential Fields Method
+- Optimal Methods
+- Sampling based Trajectory Generating methods. This is the main one we learned in the class.
+
+I take following steps to generate trajectory:
+- Prepare 5 points for generating Polynomial
+- 2 points are from previous path planner, this makes sure the smooth transition
+- 3 points are newly generated, 30m space between each points. These points in the end serves in purpose of smooth transitions
+- Fitting  Polynomial using [spline]
+- Generate Trajectory using  Polynomial
+
+
+Notes:
+- using Frenet coordinate makes the following lane problem simple. 
+- Jerk minimization method need to be adapted.  
+- previous waypoints are used in order to make smooth transition 
+- Polynomial trajectory generation. We used package - spline
+- we will generate 50 waypoints in front of the ego car. The car takes 0.02s to travel from one waypoint to next waypoint. So the planner generates 1 second trajectory.
+
 
 
 ## Project Problem Solving Approach
