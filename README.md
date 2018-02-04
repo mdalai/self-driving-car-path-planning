@@ -127,3 +127,11 @@ I want the car to always come back to center lane if is safe to do so. By doing 
 - Better Frenet to Cartesian coordinate conversion function. The current getXY function is used linear interpolation. It would be better to use polynomial interpolation probably using SPLINE. 
 - Better cost function design
 - Better process model should be adapted when predicting others cars’ position. In here, we used most simple one, linear point model. More complex models are Nonlinear model, bicycle kinematic model etc.
+
+## Extra Readings
+- [Udacity CS373: Programming a Robotic Car Unit 4: Motion](https://www.udacity.com/file?file_key=agpzfnVkYWNpdHl1ckcLEgZDb3Vyc2UiBWNzMzczDAsSCUNvdXJzZVJldiIHZmViMjAxMgwLEgRVbml0GIHQDwwLEgxBdHRhY2hlZEZpbGUYwYUTDA)
+- [Path Planning and Collision Avoidance](http://ais.informatik.uni-freiburg.de/teaching/ss10/robotics/slides/16-pathplanning.pdf)
+- [Safe Motion Planning for Autonomous Driving](https://wesscholar.wesleyan.edu/cgi/viewcontent.cgi?referer=&httpsredir=1&article=1856&context=etd_hon_theses)
+- [Local and Global Path Generation for Autonomous Vehicles Using Splines](http://www.scielo.org.co/pdf/inge/v21n2/v21n2a05.pdf)
+- [Medium- Path Planning in Highways for an Autonomous Vehicle](https://medium.com/@mohankarthik/path-planning-in-highways-for-an-autonomous-vehicle-242b91e6387d)
+- [Real-time motion planning methods for autonomous on-road driving: State-of-the-art and future research directions](https://www.sciencedirect.com/science/article/pii/S0968090X15003447)
