@@ -4,7 +4,7 @@
 [error]: ./assets/prediction_code_error.PNG
 [image1]: ./assets/path_planning.PNG
 
-![alt_text][image1]
+  ![alt text][image1]
 
 ## Project Overview
 ### Project goal 
@@ -113,7 +113,8 @@ The car thinks it is OK to change lane even though it is not safe to change. It 
 **Result**: did not work. Collision happened as before. 
 
 I am sure something is wrong with my prediction step. I checked the code and found out following error. 
-![alt_text][error]
+
+  ![alt text][error]
 
 After updating this error. The car can drive normally. This is terrible error. I learned the lesson hard way. Always remember to print the value when debugging and make sure all printed values are what you expected. 
 
