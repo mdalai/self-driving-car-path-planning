@@ -114,3 +114,9 @@ After updating this error. The car can drive normally. This is terrible error. I
 I want the car to always come back to center lane if is safe to do so. By doing so we will have more options to turn either left or right. This should let car arrive to goal distance in shorter time. 
 **Result**: there is no significant improvement. Actually, it took slightly longer time. 
 
+## Next
+- More precise prediction can be adapted by adjusting the car speed using Frenet S speed. Currently, we used [car_speed = vx*vx + vy*vy] to calculate the car speed. 
+- If the ego car is too close from front car and not safe to change lane, the ego car should goes with speed same with the front car. Currently, we just force the car to slow down.
+- Better Frenet to Cartesian coordinate conversion function. The current getXY function is used linear interpolation. It would be better to use polynomial interpolation probably using SPLINE. 
+- Better cost function design
+- Better process model should be adapted when predicting others cars’ position. In here, we used most simple one, linear point model. More complex models are Nonlinear model, bicycle kinematic model etc.
