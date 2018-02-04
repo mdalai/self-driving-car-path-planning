@@ -1,8 +1,8 @@
 # self-driving-car-path-planning
 
 [//]: # (Image References)
-[error]: ./assets/prediction_code_error.PNG
-[image1]: ./assets/path_planning.PNG
+[error]: ./assests/prediction_code_error.PNG
+[image1]: ./assests/path_planning.PNG
 
   ![alt text][image1]
 
