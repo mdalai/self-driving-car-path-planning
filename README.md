@@ -45,8 +45,8 @@ In this step, we will generate trajectory based on the behaviour planning result
 
 I take following steps to generate trajectory:
 - Prepare 5 points for generating Polynomial
-- 2 points are from previous path planner, this makes sure the smooth transition
-- 3 points are newly generated, 30m space between each points. These points in the end serves in purpose of smooth transitions
+   - 2 points are from previous path planner, this makes sure the smooth transition
+   - 3 points are newly generated, 30m space between each points. These points in the end serves in purpose of smooth transitions
 - Fitting  Polynomial using [spline]
 - Generate Trajectory using  Polynomial
 
